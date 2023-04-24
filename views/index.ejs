@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYANWOLFEE</title>
+</head>
+<body>
+    <h1>CHELSEA ARE WACK 2kBoGuRG8QgielNW</h1>
+    <h2>ARSENAL IS LOSING THE LEAGUE HAHAHA!!!</h2>
+    <h3>BUTI REALLY DON'T WANT MAN CITY DOMINATING THIS LEAGUE</h3>
+    <form action="/quotes" method="POST">
+        <input type="text" name="name" placeholder="NAME">
+        <input type="text" name="quotes" placeholder="QUOTE">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <h2>QUOTES</h2>
+
+    <ul class="quotes">
+        <% for(let i = 0; i< quotes.length; i++){%>
+            <li class="quote">
+                <span><%= quotes[i].name %></span>:
+                <span><%= quotes[i].quotes %></span>
+            </li>
+            <% } %>
+    </ul>
+
+    <div>
+        <h2>REPLACE BOLA QUOTE with james bond</h2>
+        <form action="/quotes" method="PUT">
+            <input type="text" id="newQuote">
+            <button id="update-button">REPLACE</button>
+        </form>
+        
+    </div>
+
+    <section>
+        <h2>DELETE JAMES BOND QUOTE</h2>
+        <p>delete james quote from the list as it is an order from agent M</p>
+        <button id="delete-button">DELETE JAMES QUOTE</button>
+        <div id="message"></div>
+    </section>
+    <script src="/main.js"></script>
+</body>
+</html>
